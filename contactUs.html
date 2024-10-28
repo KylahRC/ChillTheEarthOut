@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>NeuroEnhance Solutions</title>
+
+    <script>
+        function validateInputPresent() 
+        {
+            var fullName = document.getElementById('fullNameInput').value;
+            var email = document.getElementById('emailInput').value;
+            var phoneNumber = document.getElementById('phoneNumberInput').value;
+            var message = document.getElementById('messageInput').value;
+
+            if (fullName == "")
+                document.getElementById('fullNameInput').style.backgroundColor = 'lemonchiffon';
+            else if (fullName != "")
+                document.getElementById('fullNameInput').style.backgroundColor = 'white';
+
+
+            if (email == "")
+                document.getElementById('emailInput').style.backgroundColor = 'lemonchiffon';
+            else if (email != "")
+                document.getElementById('emailInput').style.backgroundColor = 'white';
+            
+        
+            if (phoneNumber == "")
+                document.getElementById('phoneNumberInput').style.backgroundColor = 'lemonchiffon';
+            else if (phoneNumber != "")
+                document.getElementById('phoneNumberInput').style.backgroundColor = 'white';
+
+
+            if
+                (message == "")
+                document.getElementById('messageInput').style.backgroundColor = 'lemonchiffon';
+            else if (message != "")
+                document.getElementById('messageInput').style.backgroundColor = 'white';
+            
+        }
+    </script>
+</head>
+
+<body>
+    <div id="toggleButton">
+        <hr>☰
+    </div>
+    <!-- Navbar list -->
+    <ul id="navbar">
+        <li id="navbarHeading">Where do you want to go?</li>
+        <li><a href="homePage.html">Home</a></li>
+        <li><a href="cloudSeeding.html">Cloud Seeding</a></li>
+        <li><a href="canalImplementation.html">Canal implementation</a></li>
+        <li><a href="high-albedoSurfaces.html">High-albedo surfaces</a></li>
+        <li><a href="communityEngagement.html">Community engagement</a></li>
+        <li><a class="active" href="contactUs.html">Contact Us</a></li>
+    </ul>
+    <!-- end of navbar list -->
+    <div id="Heading">
+        <hr>
+        <center>
+            <h1>Chill The Earth Out</h1>
+        </center>
+        <hr>
+    </div>
+    <div id="bodyPanel">
+    <center>
+        <div style="border-color: black;">
+            <h1>Contact Us</h1>
+            <table>
+                <tr>
+                    <td>
+                        <lable>Full Name</lable>
+                    </td>
+                    <td>
+                        <input type="text" id="fullNameInput">
+                    </td>
+                <tr>
+                    <td>
+                        <lable>Email</lable>
+                    </td>
+                    <td>
+                        <input type="email" id="emailInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Phone Number</lable>
+                    </td>
+                    <td>
+                        <input type="tel" id="phoneNumberInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Message</lable>
+                    </td>
+                    <td>
+                        <input type="text" id="messageInput">
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center><button onclick="validateInputPresent()">SUBMIT</button></center>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+</div>
+<script>
+    document.getElementById('toggleButton').addEventListener('click', function () {
+        document.getElementById('navbar').classList.toggle('show');
+        this.classList.toggle('show');
+    });
+</script>
+</body>
+
+</html>

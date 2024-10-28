@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NeuroEnhance Solutions</title>
+    <!--link to stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="toggleButton">
+        <hr>☰
+    </div>
+    <!-- Navbar list -->
+    <ul id="navbar">
+        <li id="navbarHeading">Where do you want to go?</li>
+        <li><a href="homePage.html">Home</a></li>
+        <li><a href="cloudSeeding.html">Cloud Seeding</a></li>
+        <li><a href="canalImplementation.html">Canal implementation</a></li>
+        <li><a class="active" href="high-albedoSurfaces.html">High-albedo surfaces</a></li>
+        <li><a href="communityEngagement.html">Community engagement</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+    </ul>
+    <!-- end of navbar list -->
+    <div id="Heading">
+        <hr>
+        <center>
+            <h1>Chill The Earth Out</h1>
+        </center>
+        <hr>
+    </div>
+    <div id="bodyPanel">
+        <h1>High-albedo surfaces</h1>
+
+       
+        <p id="paraTemplate" style="text-align: left;">
+            High-albedo surfaces are materials that reflect a significant portion of sunlight, reducing the amount of
+            heat absorbed by buildings and pavements. These surfaces, often white or light-colored, help lower urban
+            temperatures by reflecting solar radiation back into the atmosphere. By mitigating the urban heat island
+            effect, high-albedo surfaces contribute to a cooler environment, reducing energy consumption for air
+            conditioning and enhancing overall comfort in urban areas. Additionally, these surfaces can improve air
+            quality by decreasing the formation of ground-level ozone, a pollutant that increases with higher
+            temperatures.
+            <br><br>
+            One successful case study is Los Angeles, California, which has implemented cool roof regulations requiring
+            new and refurbished buildings to use high-albedo materials. This initiative has significantly lowered
+            rooftop temperatures, leading to reduced energy use for cooling and decreasing the city's overall
+            temperature. Los Angeles has also experimented with high-albedo coatings on pavements, resulting in cooler
+            streets and a more comfortable urban environment.
+            <br><br>
+            New York City has also adopted high-albedo surfaces through its CoolRoofs program, which aims to coat
+            millions of square feet of rooftops with reflective materials. This effort has not only reduced building
+            temperatures and energy costs but also provided job training and employment opportunities for residents. By
+            engaging the community and promoting sustainable practices, New York City has set an example for other urban
+            centers looking to mitigate the effects of climate change and improve quality of life for their inhabitants.
+        </p>
+
+
+
+    </div>
+    <!--end of div-->
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function () {
+            document.getElementById('navbar').classList.toggle('show');
+            this.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
