@@ -113,7 +113,8 @@ hr {
 
 #EarthLogo
 {
-  width: 300px;
+
+  width: 20%;
 }
 
 @media screen and (max-width:800px)
